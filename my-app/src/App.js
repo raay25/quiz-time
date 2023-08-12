@@ -74,12 +74,12 @@ function App() {
   return (
     <div className="main-container">
       {numCorrect===5 && <Confetti />}
-      {windowWidth>1000 && 
-        <>
-          <img src={topRight} alt="topright" className="topRight" width="200rem"/>
-          <img src={bottomLeft} alt="bottomleft" className="bottomLeft" width="200rem"/>
-        </>
-      }
+      // {windowWidth>1000 && 
+      //   <>
+      //     <img src={topRight} alt="topright" className="topRight" width="200rem"/>
+      //     <img src={bottomLeft} alt="bottomleft" className="bottomLeft" width="200rem"/>
+      //   </>
+      // }
       {quizState===1 && <TitleScreen quizState={quizState} changeState={changeState} />}
       {quizState===2 && 
         <div className="questions-container">
